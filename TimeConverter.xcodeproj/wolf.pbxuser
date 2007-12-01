@@ -1,0 +1,150 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Release;
+		activeExecutable = 799CDF280D00F175003C1FE8 /* TimeConverter */;
+		activeTarget = 8D1107260486CEB800E47090 /* TimeConverter */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* TimeConverter */,
+		);
+		codeSenseManager = 799CDF380D00F17C003C1FE8 /* Code sense */;
+		executables = (
+			799CDF280D00F175003C1FE8 /* TimeConverter */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 218165621;
+			PBXWorkspaceStateSaveDate = 218165621;
+		};
+		perUserProjectItems = {
+			799CDF530D010803003C1FE8 /* PBXTextBookmark */ = 799CDF530D010803003C1FE8 /* PBXTextBookmark */;
+			799CDF540D010803003C1FE8 /* PBXTextBookmark */ = 799CDF540D010803003C1FE8 /* PBXTextBookmark */;
+			799CDF570D010803003C1FE8 /* PBXTextBookmark */ = 799CDF570D010803003C1FE8 /* PBXTextBookmark */;
+			799CDF580D010803003C1FE8 /* PBXTextBookmark */ = 799CDF580D010803003C1FE8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 799CDF370D00F17C003C1FE8 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	799CDF280D00F175003C1FE8 /* TimeConverter */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = TimeConverter;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	799CDF370D00F17C003C1FE8 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	799CDF380D00F17C003C1FE8 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	799CDF390D00F2DC003C1FE8 /* AppController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1072, 804}}";
+			sepNavSelRange = "{237, 0}";
+			sepNavVisRange = "{0, 374}";
+			sepNavWindowFrame = "{{658, 257}, {1131, 908}}";
+		};
+	};
+	799CDF3A0D00F2DC003C1FE8 /* AppController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1072, 804}}";
+			sepNavSelRange = "{696, 0}";
+			sepNavVisRange = "{0, 1332}";
+			sepNavWindowFrame = "{{368, 284}, {1131, 908}}";
+		};
+	};
+	799CDF530D010803003C1FE8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 799CDF3A0D00F2DC003C1FE8 /* AppController.m */;
+		name = "AppController.m: 20";
+		rLen = 0;
+		rLoc = 427;
+		rType = 0;
+		vrLen = 1323;
+		vrLoc = 0;
+	};
+	799CDF540D010803003C1FE8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 799CDF3A0D00F2DC003C1FE8 /* AppController.m */;
+		name = "AppController.m: 31";
+		rLen = 0;
+		rLoc = 696;
+		rType = 0;
+		vrLen = 1332;
+		vrLoc = 0;
+	};
+	799CDF570D010803003C1FE8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 799CDF390D00F2DC003C1FE8 /* AppController.h */;
+		name = "AppController.h: 13";
+		rLen = 6;
+		rLoc = 205;
+		rType = 0;
+		vrLen = 382;
+		vrLoc = 0;
+	};
+	799CDF580D010803003C1FE8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 799CDF390D00F2DC003C1FE8 /* AppController.h */;
+		name = "AppController.h: 14";
+		rLen = 0;
+		rLoc = 237;
+		rType = 0;
+		vrLen = 374;
+		vrLoc = 0;
+	};
+	8D1107260486CEB800E47090 /* TimeConverter */ = {
+		activeExec = 0;
+		executables = (
+			799CDF280D00F175003C1FE8 /* TimeConverter */,
+		);
+	};
+}
