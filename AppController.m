@@ -44,4 +44,8 @@
 	return result;
 }
 
+- (NSArray*)knownAbbreviations {
+	return [[NSTimeZone abbreviationDictionary] allKeys];
+}
+
 @end

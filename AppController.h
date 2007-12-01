@@ -19,4 +19,6 @@
 
 - (NSCalendarDate*)myTime;
 
+- (NSArray*)knownAbbreviations;
+
 @end
