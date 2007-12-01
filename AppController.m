@@ -45,7 +45,7 @@
 }
 
 - (NSArray*)knownAbbreviations {
-	return [[NSTimeZone abbreviationDictionary] allKeys];
+	return [[[NSTimeZone abbreviationDictionary] allKeys] sortedArrayUsingSelector:@selector(compare:)];
 }
 
 @end
