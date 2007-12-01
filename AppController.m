@@ -24,7 +24,7 @@
 }
 
 - (NSString*)theirTimeZoneString {
-	return [theirTimeZoneObj description];
+	return [theirTimeZoneObj abbreviation];
 }
 
 -(void)setTheirTimeZoneString:(NSString*)tz_ {
