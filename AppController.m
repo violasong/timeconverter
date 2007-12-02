@@ -24,11 +24,16 @@
 }
 
 - (NSString*)theirTimeZoneString {
-	return [theirTimeZoneObj abbreviation];
+	return [theirTimeZoneObj abbreviation]; // default drop down
 }
 
 -(void)setTheirTimeZoneString:(NSString*)tz_ {
-	theirTimeZoneObj = [NSTimeZone timeZoneWithAbbreviation:tz_];
+	if ([[self knownAbbreviations] containsObject:[tz_ uppercaseString]]) {
+		theirTimeZoneObj = [NSTimeZone timeZoneWithAbbreviation:[tz_ uppercaseString]];
+	}
+	if ([[self knownNames] containsObject:tz_]) {
+		theirTimeZoneObj = [NSTimeZone timeZoneWithName:tz_];
+	}
 }
 
 - (NSCalendarDate*)myTime {
@@ -46,6 +51,14 @@
 
 - (NSArray*)knownAbbreviations {
 	return [[[NSTimeZone abbreviationDictionary] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+}
+
+- (NSArray*)knownNames {
+	return [[NSTimeZone knownTimeZoneNames] sortedArrayUsingSelector:@selector(compare:)];
+}
+
+- (NSArray*)timeZones {
+	return [[self knownAbbreviations] arrayByAddingObjectsFromArray:[self knownNames]];
 }
 
 @end

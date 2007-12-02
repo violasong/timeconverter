@@ -20,5 +20,7 @@
 - (NSCalendarDate*)myTime;
 
 - (NSArray*)knownAbbreviations;
+- (NSArray*)knownNames;
+- (NSArray*)timeZones;
 
 @end
