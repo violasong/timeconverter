@@ -27,12 +27,12 @@
 	return [theirTimeZoneObj abbreviation]; // default drop down
 }
 
--(void)setTheirTimeZoneString:(NSString*)tz_ {
+- (void)setTheirTimeZoneString:(NSString*)tz_ {
 	if ([[self knownAbbreviations] containsObject:[tz_ uppercaseString]]) {
 		theirTimeZoneObj = [NSTimeZone timeZoneWithAbbreviation:[tz_ uppercaseString]];
 	}
-	if ([[self knownNames] containsObject:tz_]) {
-		theirTimeZoneObj = [NSTimeZone timeZoneWithName:tz_];
+	if ([[self knownNames] containsObject:[tz_ capitalizedString]]) {
+		theirTimeZoneObj = [NSTimeZone timeZoneWithName:[[self cityDictionary] objectForKey:[tz_ capitalizedString]]];
 	}
 }
 
@@ -50,15 +50,28 @@
 }
 
 - (NSArray*)knownAbbreviations {
-	return [[[NSTimeZone abbreviationDictionary] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+	return [[NSTimeZone abbreviationDictionary] allKeys];
 }
 
 - (NSArray*)knownNames {
-	return [[NSTimeZone knownTimeZoneNames] sortedArrayUsingSelector:@selector(compare:)];
+	return [[self cityDictionary] allKeys];
 }
 
 - (NSArray*)timeZones {
-	return [[self knownAbbreviations] arrayByAddingObjectsFromArray:[self knownNames]];
+	return [[[self knownAbbreviations] arrayByAddingObjectsFromArray:[self knownNames]] sortedArrayUsingSelector:@selector(compare:)];
+}
+
+- (NSDictionary*)cityDictionary {
+	int i;
+	int namesCount = [[NSTimeZone knownTimeZoneNames] count];
+	NSMutableArray *cities = [NSMutableArray arrayWithCapacity:namesCount];
+	for (i=0; i<namesCount; i++) {
+		
+		[cities addObject:[[[[NSTimeZone knownTimeZoneNames] objectAtIndex:i] lastPathComponent] stringByReplacingOccurrencesOfString:@"_"
+																														   withString:@" "]];
+	}
+	return [NSDictionary dictionaryWithObjects:[NSTimeZone knownTimeZoneNames]
+												 forKeys:cities];
 }
 
 @end

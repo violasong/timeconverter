@@ -22,5 +22,6 @@
 - (NSArray*)knownAbbreviations;
 - (NSArray*)knownNames;
 - (NSArray*)timeZones;
+- (NSDictionary*)cityDictionary;
 
 @end
