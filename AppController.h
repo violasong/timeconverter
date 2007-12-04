@@ -24,4 +24,6 @@
 - (NSArray*)timeZones;
 - (NSDictionary*)cityDictionary;
 
+- (IBAction)addToIcal:(id)sender;
+
 @end

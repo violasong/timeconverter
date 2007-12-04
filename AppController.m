@@ -7,6 +7,7 @@
 //
 
 #import "AppController.h"
+#import <CalendarStore/CalendarStore.h>
 
 @implementation AppController
 
@@ -36,7 +37,7 @@
 	}
 }
 
-- (NSCalendarDate*)myTime {
+- (NSCalendarDate*)theirTime {
 	NSCalendarDate *theirTimeCalDate = [NSCalendarDate dateWithTimeIntervalSinceReferenceDate:[theirTime timeIntervalSinceReferenceDate]];
 	NSCalendarDate *result = [NSCalendarDate dateWithYear:[theirTimeCalDate yearOfCommonEra]
 													month:[theirTimeCalDate monthOfYear]
@@ -45,6 +46,11 @@
 												   minute:[theirTimeCalDate minuteOfHour]
 												   second:[theirTimeCalDate secondOfMinute]
 												 timeZone:theirTimeZoneObj];
+	return result;
+}
+
+- (NSCalendarDate*)myTime {
+	NSCalendarDate *result = [self theirTime];
 	[result setTimeZone:[NSTimeZone localTimeZone]];
 	return result;
 }
@@ -66,12 +72,44 @@
 	int namesCount = [[NSTimeZone knownTimeZoneNames] count];
 	NSMutableArray *cities = [NSMutableArray arrayWithCapacity:namesCount];
 	for (i=0; i<namesCount; i++) {
-		
 		[cities addObject:[[[[NSTimeZone knownTimeZoneNames] objectAtIndex:i] lastPathComponent] stringByReplacingOccurrencesOfString:@"_"
 																														   withString:@" "]];
 	}
 	return [NSDictionary dictionaryWithObjects:[NSTimeZone knownTimeZoneNames]
 												 forKeys:cities];
 }
+
+- (IBAction)addToIcal:(id)sender
+{
+	CalCalendarStore *store = [CalCalendarStore defaultCalendarStore];
+	CalCalendar *targetCalendar = nil;
+	
+	for (CalCalendar *calendar in [store calendars]) {
+		if ([calendar.title isEqualToString:@"Work"]) {
+			targetCalendar = calendar;
+		}
+	}
+	if (!targetCalendar) {
+		targetCalendar = [[store calendars] objectAtIndex:0];
+	}
+	
+	CalEvent *event = [CalEvent event];
+	event.calendar = targetCalendar;
+	event.title = @"TimeConverter!!";
+	event.startDate = [self theirTime];
+	event.endDate = [[self theirTime] dateByAddingYears:0
+											  months:0
+												days:0
+											   hours:1
+											 minutes:0
+											 seconds:0];
+	NSError *error = nil;
+	[store saveEvent:event span:CalSpanThisEvent error:&error];	
+	
+	if (error) {
+		[NSApp presentError:error];
+	}
+}
+
 
 @end
