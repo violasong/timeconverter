@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">343.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="35"/>
+			<integer value="34"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -28,7 +28,7 @@
 			<object class="NSWindowTemplate" id="20115412">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{303, 646}, {413, 125}}</string>
+				<string key="NSWindowRect">{{259, 652}, {413, 125}}</string>
 				<int key="NSWTFlags">1946157056</int>
 				<string key="NSWindowTitle" id="84238330">TimeConverter</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -86,7 +86,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 								<int key="NSDatePickerElements">508</int>
 								<object class="NSColor" key="NSBackgroundColor" id="47941170">
 									<int key="NSColorSpace">6</int>
-									<string key="NSCatalogName" id="653986594">System</string>
+									<string key="NSCatalogName" id="707354357">System</string>
 									<string key="NSColorName">controlBackgroundColor</string>
 									<object class="NSColor" key="NSColor" id="752985470">
 										<int key="NSColorSpace">3</int>
@@ -95,7 +95,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 								</object>
 								<object class="NSColor" key="NSTextColor" id="818488329">
 									<int key="NSColorSpace">6</int>
-									<reference key="NSCatalogName" ref="653986594"/>
+									<reference key="NSCatalogName" ref="707354357"/>
 									<string key="NSColorName">controlTextColor</string>
 									<object class="NSColor" key="NSColor">
 										<int key="NSColorSpace">3</int>
@@ -119,7 +119,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 								<reference key="NSControlView" ref="382153798"/>
 								<object class="NSColor" key="NSBackgroundColor" id="999748463">
 									<int key="NSColorSpace">6</int>
-									<reference key="NSCatalogName" ref="653986594"/>
+									<reference key="NSCatalogName" ref="707354357"/>
 									<string key="NSColorName">controlColor</string>
 									<reference key="NSColor" ref="752985470"/>
 								</object>
@@ -197,7 +197,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 								<bool key="NSDrawsBackground">YES</bool>
 								<object class="NSColor" key="NSBackgroundColor">
 									<int key="NSColorSpace">6</int>
-									<reference key="NSCatalogName" ref="653986594"/>
+									<reference key="NSCatalogName" ref="707354357"/>
 									<string key="NSColorName">textBackgroundColor</string>
 									<object class="NSColor" key="NSColor" id="165658200">
 										<int key="NSColorSpace">3</int>
@@ -218,7 +218,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 									<object class="NSMutableArray" key="NSTableColumns">
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<object class="NSTableColumn">
-											<integer value="0" key="NSIdentifier" id="8"/>
+											<integer value="0" key="NSIdentifier"/>
 											<double key="NSWidth">1.200000e+01</double>
 											<double key="NSMinWidth">1.000000e+01</double>
 											<double key="NSMaxWidth">1.000000e+03</double>
@@ -256,7 +256,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 									<reference key="NSBackgroundColor" ref="47941170"/>
 									<object class="NSColor" key="NSGridColor">
 										<int key="NSColorSpace">6</int>
-										<reference key="NSCatalogName" ref="653986594"/>
+										<reference key="NSCatalogName" ref="707354357"/>
 										<string key="NSColorName">gridColor</string>
 										<object class="NSColor" key="NSColor">
 											<int key="NSColorSpace">3</int>
@@ -394,7 +394,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label" id="834429510">addToIcal:</string>
+						<string key="label" id="687680910">addToIcal:</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="3074099"/>
 					</object>
@@ -556,6 +556,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 					<string>-2.IBPluginDependency</string>
 					<string>-3.IBPluginDependency</string>
 					<string>33.IBPluginDependency</string>
+					<string>33.IBViewEditorWindowController.showingBoundsRectangles</string>
 					<string>33.IBViewEditorWindowController.showingLayoutRectangles</string>
 					<string>33.IBWindowTemplateEditedContentRect</string>
 					<string>33.NSWindowTemplate.visibleAtLaunch</string>
@@ -565,6 +566,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 					<string>33.windowTemplate.maxSize</string>
 					<string>33.windowTemplate.minSize</string>
 					<string>34.IBPluginDependency</string>
+					<string>34.IBUserGuides</string>
 					<string>35.IBAttributePlaceholdersKey</string>
 					<string>35.IBPluginDependency</string>
 					<string>36.IBPluginDependency</string>
@@ -586,15 +588,19 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 					<reference ref="204128705"/>
 					<reference ref="204128705"/>
 					<reference ref="204128705"/>
-					<reference ref="8"/>
-					<string id="164513351">{{303, 438}, {413, 125}}</string>
+					<integer value="0" id="6"/>
+					<reference ref="6"/>
+					<string>{{337, 564}, {413, 125}}</string>
 					<reference ref="9"/>
-					<reference ref="164513351"/>
+					<string>{{337, 564}, {413, 125}}</string>
 					<reference ref="9"/>
 					<reference ref="9"/>
 					<string>{100000, 125}</string>
 					<string>{413, 125}</string>
 					<reference ref="204128705"/>
+					<object class="NSArray">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+					</object>
 					<object class="NSMutableDictionary">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
@@ -648,7 +654,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 					<string key="className">TimeConverterWindowController</string>
 					<string key="superclassName">NSWindowController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<reference key="NS.key.0" ref="834429510"/>
+						<reference key="NS.key.0" ref="687680910"/>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
@@ -693,7 +699,7 @@ VABVAFUAVwBYAFkAWgBbAFwAXQBeACtcTlNXaW5kb3dWaWV3XxAWTlNXaW5kb3dDb250ZW50TWF4U2l6
 ZVxOU1NjcmVlblJlY3RfEBNOU0ZyYW1lQXV0b3NhdmVOYW1lXU5TV2luZG93VGl0bGVZTlNXVEZsYWdz
 XU5TV2luZG93Q2xhc3NfEBZOU1dpbmRvd0NvbnRlbnRNaW5TaXplXE5TV2luZG93UmVjdFlOU01heFNp
 emVfEA9OU1dpbmRvd0JhY2tpbmdfEBFOU1dpbmRvd1N0eWxlTWFza1lOU01pblNpemVbTlNWaWV3Q2xh
-c3OADYBrgAuAaIAJgAkSdAAAAIAKgAyACIBqEAIQD4BpgABfEBh7ezMwMywgNjQ2fSwgezQxMywgMTI1
+c3OADYBrgAuAaIAJgAkSdAAAAIAKgAyACIBqEAIQD4BpgABfEBh7ezI1OSwgNjUyfSwgezQxMywgMTI1
 fX1dVGltZUNvbnZlcnRlclhOU1dpbmRvd117MTAwMDAwLCAxMjV9Wns0MTMsIDEyNX3XAGYADgBnAGgA
 aQBiAGoAawBsAG0AbgBvAGsAcV8QD05TTmV4dFJlc3BvbmRlclpOU1N1YnZpZXdzWE5TdkZsYWdzW05T
 RnJhbWVTaXplW05TU3VwZXJ2aWV3gA6AZ4APEQEAgGWADoBm0gAOAD4AcwB0gFemAHUAdgB3AHgAeQB6
@@ -799,11 +805,11 @@ OjAwIC0wODAwKV8QFVN0YXRpYyBUZXh0IChNeSBUaW1lKV8QGUJ1dHRvbiBDZWxsIChBZGQgdG8gaUNh
 bClfEBdTdGF0aWMgVGV4dCAoTXkgVGltZSktMV8QG1RleHQgRmllbGQgQ2VsbCAoTXkgVGltZSktMV8Q
 GVB1c2ggQnV0dG9uIChBZGQgdG8gaUNhbClfEBhTdGF0aWMgVGV4dCAoVGhlaXIgVGltZSleRGF0ZSBG
 b3JtYXR0ZXJZQ29tYm8gQm94XEZpbGUncyBPd25lclxDb250ZW50IFZpZXfSAA4APgJoAs6AiKDSAA4A
-PgJoAtGAiKDSAA4APgJoAtSAiK8QGABBAhkCawFWAPACFwIYAHUBDwB3AIICGgHoAhYCHAB4ASAAegEs
-AHYCGwAfAHkAUYAHgHaAhoBFgCqAcYBzgBCAMoAwgBKAe4BhgG6AgoA0gDaAX4A3gCiAfoACgEOADdIA
+PgJoAtGAiKDSAA4APgJoAtSAiK8QGABBAhYCawFWAPACFwIZAHUBDwIYAHcAggIaAegCHAB4ASAAegEs
+AHYCGwAfAHkAUYAHgG6AhoBFgCqAcYB2gBCAMoBzgDCAEoB7gGGAgoA0gDaAX4A3gCiAfoACgEOADdIA
 DgA+AmgC74CIrxAYAvAC8QLyAvMC9AL1AvYC9wL4AvkC+gL7AvwC/QL+Av8DAAMBAwIDAwMEAwUDBgMH
-gKGAooCjgKSApYCmgKeAqICpgKqAq4CsgK2AroCvgLCAsYCygLOAtIC1gLaAt4C4ECEQNhP/////////
-/RAuECoQMRA7ECgQKxAmECkQNBAvEDIQOBAlECwQIxAtECcQNxA8ECQQItIADgA+AHMDIoBXoNIADgA+
+gKGAooCjgKSApYCmgKeAqICpgKqAq4CsgK2AroCvgLCAsYCygLOAtIC1gLaAt4C4ECEQMhP/////////
+/RAuECoQMRA2ECgQKxA7ECYQKRA0EC8QOBAlECwQIxAtECcQNxA8ECQQItIADgA+AHMDIoBXoNIADgA+
 AmgDJYCIoNIADgA+AmgDKICIoNIANwA4AyoDK6IDKwA7Xk5TSUJPYmplY3REYXRhAAgAGQAiACcAMQA6
 AD8ARABSAFQAZgHjAekCNAI7AkICUAJiAn4CjAKYAqQCsgK9AssC5wL1AwgDGgM0Az4DSwNNA08DUQNT
 A1UDVwNZA1sDXQNfA2EDYwNlA2cDaQNrA20DbwN4A4QDhgOIA6gDsQO6A8UDygPZA+ID9QP+BAkECwQO
