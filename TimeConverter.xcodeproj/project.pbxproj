@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556557F00D050781004ABB55 /* TimeConverterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556557EE0D050781004ABB55 /* TimeConverterWindow.xib */; };
+		5565580D0D0507E9004ABB55 /* TimeConverterWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5565580C0D0507E9004ABB55 /* TimeConverterWindowController.m */; };
 		55931B990D03E35F001321DE /* CalendarStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55931B980D03E35F001321DE /* CalendarStore.framework */; };
 		799CDF3B0D00F2DC003C1FE8 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CDF3A0D00F2DC003C1FE8 /* AppController.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
@@ -24,6 +26,9 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* TimeConverter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeConverter_Prefix.pch; sourceTree = "<group>"; };
+		556557EF0D050781004ABB55 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/TimeConverterWindow.xib; sourceTree = "<group>"; };
+		5565580B0D0507E9004ABB55 /* TimeConverterWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeConverterWindowController.h; sourceTree = "<group>"; };
+		5565580C0D0507E9004ABB55 /* TimeConverterWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeConverterWindowController.m; sourceTree = "<group>"; };
 		55931B980D03E35F001321DE /* CalendarStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalendarStore.framework; path = /System/Library/Frameworks/CalendarStore.framework; sourceTree = "<absolute>"; };
 		799CDF390D00F2DC003C1FE8 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		799CDF3A0D00F2DC003C1FE8 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
@@ -49,6 +54,8 @@
 			children = (
 				799CDF390D00F2DC003C1FE8 /* AppController.h */,
 				799CDF3A0D00F2DC003C1FE8 /* AppController.m */,
+				5565580B0D0507E9004ABB55 /* TimeConverterWindowController.h */,
+				5565580C0D0507E9004ABB55 /* TimeConverterWindowController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				556557EE0D050781004ABB55 /* TimeConverterWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 			files = (
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				556557F00D050781004ABB55 /* TimeConverterWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				799CDF3B0D00F2DC003C1FE8 /* AppController.m in Sources */,
+				5565580D0D0507E9004ABB55 /* TimeConverterWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +207,14 @@
 				29B97319FDCFA39411CA2CEA /* English */,
 			);
 			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		556557EE0D050781004ABB55 /* TimeConverterWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556557EF0D050781004ABB55 /* English */,
+			);
+			name = TimeConverterWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

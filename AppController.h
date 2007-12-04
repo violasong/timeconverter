@@ -10,19 +10,8 @@
 
 
 @interface AppController : NSObject {
-	NSDate		*theirTime;
-	NSTimeZone	*theirTimeZoneObj;
+	
 }
-
-- (NSString*)theirTimeZoneString;
-- (void)setTheirTimeZoneString:(NSString*)tz_;
-
-- (NSCalendarDate*)myTime;
-
-- (NSArray*)knownAbbreviations;
-- (NSArray*)knownNames;
-- (NSArray*)timeZones;
-- (NSDictionary*)cityDictionary;
 
 - (IBAction)addToIcal:(id)sender;
 
