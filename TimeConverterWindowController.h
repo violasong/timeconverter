@@ -12,6 +12,7 @@
 @interface TimeConverterWindowController : NSWindowController {
 	NSDate		*theirTime;
 	NSTimeZone	*theirTimeZoneObj;
+	NSTextField	*eventTitle;
 }
 
 - (NSString*)theirTimeZoneString;

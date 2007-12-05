@@ -20,7 +20,6 @@
 	if (self) {
 		theirTime = [[NSDate alloc] init];
 		theirTimeZoneObj = [NSTimeZone localTimeZone];
-		
 		[[self window] makeKeyAndOrderFront:nil];
 	}
 	return self;
@@ -97,7 +96,15 @@
 	
 	CalEvent *event = [CalEvent event];
 	event.calendar = targetCalendar;
-	event.title = @"TimeConverter!!";
+	
+	NSString *title = [eventTitle stringValue];
+	if ([title length] > 0) {
+		event.title = title;
+	}
+	else {
+		event.title = @"New Event";
+	}
+	
 	event.startDate = [self theirTime];
 	event.endDate = [[self theirTime] dateByAddingYears:0
 												 months:0
