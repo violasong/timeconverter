@@ -18,7 +18,14 @@
 - (id)init {
 	self = [super initWithWindowNibName:@"TimeConverterWindow"];
 	if (self) {
-		theirTime = [[NSDate alloc] init];
+		NSCalendarDate *theirTimeCalDate = [NSCalendarDate calendarDate];
+		theirTime = [[NSDate alloc] initWithString:[[NSCalendarDate dateWithYear:[theirTimeCalDate yearOfCommonEra]
+																		   month:[theirTimeCalDate monthOfYear]
+																			 day:[theirTimeCalDate dayOfMonth]
+																			hour:[theirTimeCalDate hourOfDay]
+																		  minute:0
+																		  second:0
+																		timeZone:theirTimeZoneObj] description]];
 		theirTimeZoneObj = [NSTimeZone localTimeZone];
 		[[self window] makeKeyAndOrderFront:nil];
 	}
@@ -26,7 +33,7 @@
 }
 
 - (NSString*)theirTimeZoneString {
-	return [theirTimeZoneObj abbreviation]; // default drop down
+	return [theirTimeZoneObj abbreviation];
 }
 
 - (void)setTheirTimeZoneString:(NSString*)tz_ {
