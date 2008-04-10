@@ -1,11 +1,3 @@
-//
-//  AppController.m
-//  TimeConverter
-//
-//  Created by wolf on 11/30/07.
-//  Copyright 2007 __MyCompanyName__. All rights reserved.
-//
-
 #import "AppController.h"
 #import "TimeConverterWindowController.h"
 
